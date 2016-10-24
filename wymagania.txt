@@ -1,0 +1,15 @@
+Wymagania
+
+Prosty kalkulator z metodą int Dodaj(string liczby)
+Metoda może przyjmować 0, 1 lub 2 liczby i powinna zwracać ich sumę (dla pustego stringa powinna zwracać 0) np. "", "1" lub "1,2"
+Pozwól metodzie Dodaj obsłużyć dowolną ilość liczb
+Pozwól metodzie Dodaj obsłużyć nową linię między liczbami (zamiast przecinka)
+Następując wejście jest prawidłowe: "1\n2,3" i powinno zwracać 6
+Dodaj wsparcie dla różnych Support separatorów
+Aby można było konfigurować separator, na początku stringa powinien być podany w następującym formacie "//[separator]\n[liczby...]” np. "//;\n1;2" powinno zwrócić 3, a separatoriem jest średnik ";"
+Pierwsza linia jest opcjonalna. Wszystkie istniejące scenariusze powinny przechodzić
+Zawołanie metody Dodaj z ujemnymi liczbami powinno rzucić wyjątek "ujemne liczby nie są dopuszczalne" i ujemną liczbę, która została przekazana. Jeśli przekazano wiele ujemnych liczba, powinny zostać wyświetlone wszystkie w komunikacie wyjątku
+Liczby większe niz 1000 powinny być ignorowane, więc np. dodanie 2 + 1001 = 2
+Separatory mogą być dowolnej długości w formacie: "//[separator]\n" np.: "//[—]\n1—2—3" powinno zwrócić 6
+Pozwól na wiele separatorów: "//[separator1][separator2]\n" np “//[-][%]\n1-2%3” powinno zwrócić 6.
+Upewnij się, że obsługujesz wiele separatorów z długością większą niz 1 znak
