@@ -16,4 +16,10 @@ public class StringKalkulatorTest {
     public final void gdyPodanoWartoscNieliczbowaWtedyRzucWyjatek() {
         StringKalkulator.dodaj("1,X");
     }
+    @Test
+    public final void gdyPodanoPustyStringWtedy0() {
+    	int expected = 0;
+    	int actual = StringKalkulator.dodaj("");
+    	Assert.assertEquals(expected, actual);
+    }
 }
