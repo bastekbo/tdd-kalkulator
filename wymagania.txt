@@ -16,4 +16,5 @@ Upewnij się, że obsługujesz wiele separatorów z długością większą niz 1
 
 Wymaganie 1: Metoda może przyjmować 0, 1 lub 2 liczby oddzielone przecinkiem (,)
 Wymaganie 2: Dla pustego stringa zwróć 0
-Wymaganie 3: Metoda powina zwracać sumę liczb
+Wymaganie 3: Metoda powinna zwracać sumę liczb
+Wymaganie 4: Pozwól metodzie dodaj na dowolnej ilości liczb

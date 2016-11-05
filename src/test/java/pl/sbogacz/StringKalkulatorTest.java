@@ -4,10 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class StringKalkulatorTest {
-    @Test(expected = RuntimeException.class)
-    public final void gdyPodanoWiecejNiz2LiczbyWtedyRzucWyjatek() {
-        StringKalkulator.dodaj("1,2,3");
-    }
 
     @Test
     public final void gdyPodano2LiczbyWtedyNieRzucajWyjatku() {
@@ -35,9 +31,17 @@ public class StringKalkulatorTest {
     }
 
     @Test
-    public final void gdyPodanoDwieLiczbyWtedyZwrocSumeTychLiczba() {
+    public final void gdyPodanoDwieLiczbyWtedyZwrocSumeTychLiczb() {
         int expected = 3+6;
         int actual = StringKalkulator.dodaj("3,6");
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public final void gdyPodanoDololnaIloscLiczbWtedyZwrocSumeTychLiczb() {
+        int expected = 3+6+12+14+16+33+47;
+        int actual = StringKalkulator.dodaj("3,6,12,14,16,33,47");
+        Assert.assertEquals(expected, actual);
+    }
+
 }
