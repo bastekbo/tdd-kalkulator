@@ -38,10 +38,16 @@ public class StringKalkulatorTest {
     }
 
     @Test
-    public final void gdyPodanoDololnaIloscLiczbWtedyZwrocSumeTychLiczb() {
+    public final void gdyPodanoDowolnaIloscLiczbWtedyZwrocSumeTychLiczb() {
         int expected = 3+6+12+14+16+33+47;
         int actual = StringKalkulator.dodaj("3,6,12,14,16,33,47");
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public final void gdyNowaLiniaPomiedzyLiczbamiWtedyZwrocSumeTychLiczb() {
+        int expected = 3+6+15;
+        int actual = StringKalkulator.dodaj("3\n6\n15");
+        Assert.assertEquals(expected, actual);
+    }
 }

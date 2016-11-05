@@ -4,10 +4,10 @@ public class StringKalkulator {
 
     public static int dodaj(String liczby) {
         int wynik = 0;
-        String[] tablicaArg = liczby.split(",");
+        String[] tablicaArg = liczby.split(",|\n");
 
         for (String liczba : tablicaArg) {
-            if (!liczba.isEmpty()) {
+            if (!liczba.trim().isEmpty()) {
                 wynik += Integer.parseInt(liczba);
             }
         }
