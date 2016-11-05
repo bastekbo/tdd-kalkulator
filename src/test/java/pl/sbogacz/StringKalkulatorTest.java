@@ -50,4 +50,10 @@ public class StringKalkulatorTest {
         int actual = StringKalkulator.dodaj("3\n6\n15");
         Assert.assertEquals(expected, actual);
     }
+    @Test
+    public final void gdyZdefiniowanoSeparatorWtedyZwrocSumeLiczb() {
+        int expected = 3+6+15;
+        int actual = StringKalkulator.dodaj("//;3;6;15");
+        Assert.assertEquals(expected, actual);
+    }
 }

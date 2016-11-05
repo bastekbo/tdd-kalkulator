@@ -19,3 +19,4 @@ Wymaganie 2: Dla pustego stringa zwróć 0
 Wymaganie 3: Metoda powinna zwracać sumę liczb
 Wymaganie 4: Pozwól metodzie dodaj na dowolnej ilości liczb
 Wymaganie 5: Pozwól metodzie dodaj na obsługę nowych linii między liczbami (oprócz przecinka)
+Wymaganie 6: Dodaj wsparcie dla separatorów definiowanych przeż użytkownika
