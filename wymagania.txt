@@ -13,3 +13,7 @@ Liczby większe niz 1000 powinny być ignorowane, więc np. dodanie 2 + 1001 = 2
 Separatory mogą być dowolnej długości w formacie: "//[separator]\n" np.: "//[—]\n1—2—3" powinno zwrócić 6
 Pozwól na wiele separatorów: "//[separator1][separator2]\n" np “//[-][%]\n1-2%3” powinno zwrócić 6.
 Upewnij się, że obsługujesz wiele separatorów z długością większą niz 1 znak
+
+Wymaganie 1: Metoda może przyjmować 0, 1 lub 2 liczby oddzielone przecinkiem (,)
+Wymaganie 2: Dla pustego stringa zwróć 0
+Wymaganie 3: Metoda powina zwracać sumę liczb

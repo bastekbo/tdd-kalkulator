@@ -1,25 +1,43 @@
 package pl.sbogacz;
+
 import org.junit.Assert;
 import org.junit.Test;
- 
+
 public class StringKalkulatorTest {
     @Test(expected = RuntimeException.class)
     public final void gdyPodanoWiecejNiz2LiczbyWtedyRzucWyjatek() {
         StringKalkulator.dodaj("1,2,3");
     }
+
     @Test
     public final void gdyPodano2LiczbyWtedyNieRzucajWyjatku() {
         StringKalkulator.dodaj("1,2");
         Assert.assertTrue(true);
     }
+
     @Test(expected = RuntimeException.class)
     public final void gdyPodanoWartoscNieliczbowaWtedyRzucWyjatek() {
         StringKalkulator.dodaj("1,X");
     }
+
     @Test
     public final void gdyPodanoPustyStringWtedy0() {
-    	int expected = 0;
-    	int actual = StringKalkulator.dodaj("");
-    	Assert.assertEquals(expected, actual);
+        int expected = 0;
+        int actual = StringKalkulator.dodaj("");
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public final void gdyPodanoJednaLiczbeWtedyZwrocDokladnieTaSamaLiczbe() {
+        int expected = 3;
+        int actual = StringKalkulator.dodaj("3");
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public final void gdyPodanoDwieLiczbyWtedyZwrocSumeTychLiczba() {
+        int expected = 3+6;
+        int actual = StringKalkulator.dodaj("3,6");
+        Assert.assertEquals(expected, actual);
     }
 }
